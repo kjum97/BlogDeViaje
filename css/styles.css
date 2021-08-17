@@ -1,0 +1,127 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+    background-color: #f2f2f2;
+    font-size: 1.6rem;
+  }
+
+  img{
+      max-width: 100%;
+  }
+
+  h2{
+      text-align: center;
+      font-size: 26px;
+      text-transform: capitalize;
+      color: rgba(31, 28, 28, 0.808);
+  }
+  .contenedor{
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 95%;
+  }
+
+  /*****HEADER******/
+  .site-header{
+      text-align: center;
+      padding: 20px 0;
+  }
+
+  .navegacion{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  @media (min-width: 768px){
+      .navegacion{
+          flex-direction: row;
+          justify-content: space-evenly;
+      }
+  }
+
+  .navegacion a{
+    font-size: 20px;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .navegacion a:hover{
+    background-color: #5fbdf3;
+    color: white;
+  }
+
+  .barra{
+    background-color: #db008d;
+  }
+  /******fin header*****/
+
+/*******MAIN******/
+.entrada{
+    margin-bottom: 1.5rem;
+}
+@media (min-width: 480px){
+    .contenido-principal{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .entrada{
+        flex-basis: calc(50% - 1rem);
+    }
+}
+
+@media (min-width: 768px){
+    .entrada{
+        flex-basis: calc(33.3% - 1rem);
+    }
+}
+
+
+.contenido{
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.contenido h3{
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Libre Baskerville', sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
+.contenido span{
+    color: #db008d;
+}
+
+.boton{
+    background-color: #008fd1;
+    color: white;
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    text-decoration: none;
+}
+/*****fin main*****/
+
+/*****footer*****/
+.site-footer{
+    padding: 2rem;
+    background-color: #b10474;
+    margin-top: 1rem;
+}
+
+.copy{
+    color: white;
+    text-align: center;
+}
